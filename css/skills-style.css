@@ -41,9 +41,24 @@
 }
 
 .skills-box {
-  padding: 1rem;
+  padding: 1.5rem;
+  margin: 8px;
   color: #000;
   cursor: pointer;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: #cad3dc;
+  box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+    inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+    0 15px 15px rgba(0, 0, 0, 0.3),
+    inset 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .skills-box {
+  box-shadow: -18px -8px 10px rgba(0, 0, 0, 0.01),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.01),
+    inset 5px 10px 20px rgba(255, 255, 255, 0.8);
 }
 
 .skills-box:hover>.skills-title:after,
@@ -51,7 +66,8 @@
   width: 0px;
 }
 
-.skills-box:hover .skills-img {
+.skills-img:hover,
+.skills-img-git:hover {
   transform: translateY(-20px);
 }
 
@@ -89,18 +105,19 @@
 }
 
 .skills-img .skills-img-git {
-  width: 90px;
-  height: 90px;
+  /* width: 90px;
+  height: 100px; */
   position: relative;
-  border-radius: 45px;
-  /* background: rgba(154, 153, 153, 0.6); */
+  /* border-radius: 45px; */
+  padding: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: .3s;
 }
 
-.skills-img:after {
+.skills-img:after,
+.skills-img-git::after {
   content: '';
   position: absolute;
   top: 0;

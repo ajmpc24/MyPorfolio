@@ -44,7 +44,7 @@ a:hover {
 
 p {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.5;
   color: #5b5b5b;
 }
@@ -73,6 +73,7 @@ h2 {
 
 h3 {
   color: #484848;
+  font-size: 1.5rem;
 }
 
 h3,
@@ -125,13 +126,13 @@ strong {
   display: inline-block;
   vertical-align: top;
   margin-top: 5px;
-  min-width: 250px;
+  min-width: 350px;
   position: relative;
 }
 
 .animated-item {
   color: #0075ff;
-  font-size: 45px;
+  font-size: 50px;
   line-height: inherit;
   display: inline-block;
   opacity: 0;
@@ -361,9 +362,10 @@ strong {
 }
 
 .dark-mode .custom-btn {
-  background: #222222;
-  color: #ffffff;
+  background: none;
+  color: #0075ff;
   border-color: #ffffff;
+  /* font-weight: 100; */
 }
 
 .dark-mode .owl-carousel .owl-nav button.owl-next,
